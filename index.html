@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./asset/logo/icon.ico">
+    <title>Faria's Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/288567780f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <audio id="myAudio" autoplay loop>
+        <source src="./asset/Mariah Carey-Obsessed.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Home -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./asset/logo/Logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span class="typing">Web Designer</span></p>
+                <h1>Hi, I'm <br/>Faria Nowsin Aurthy</h1>
+                <button id="playButton" class="btn btn2">Wanna Play Some Music</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./asset/personal photo/My Photo.jpg" alt="my-photo">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2><br/>
+                    <p>I am passionate about creating engaging digital experiences through code. I love games, music, and expressing creativity through technology.</p><br/>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills' , event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience' , event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education' , event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br/>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br/>HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</li>
+                            <li><span>App Development</span><br/>Building Android apps with Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br/>Internship at Progoti systems Limited</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Computer Science and Engineering</span><br/>Currently pursuing a B.Sc. from Shanto-Mariam University of Creative Technology<br/></li>
+                            <li><span>Full-Stack Web Development Bootcamp</span><br/>Udemy, 2025<br/>Completed advanced coursework in HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Creating visually appealing and user-friendly websites that effectively communicate your brand and engage visitors.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive interfaces and seamless user experiences that enhance usability and satisfaction across digital platforms.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>App Design</h3>
+                    <p>Crafting mobile and web applications with attractive designs and smooth functionality tailored to user needs.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-carry-box"></i>
+                    <h3>Branding</h3>
+                    <p>Building strong brand identities through strategic visuals, messaging, and positioning to differentiate your business in the market.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Content Creator</h3>
+                    <p>Producing engaging and relevant content such as videos, blogs, or social media posts to attract and retain your target audience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./asset/projects photo/Faria's Portfolio Website.jpg" alt="work-1">
+                    <div class="layer">
+                        <h3><b>Portfolio Website</b></h3>
+                        <p>A responsive portfolio showcasing my skills and projects.<br/>Already looking at the website.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./asset/projects photo/To-Do List App.jpg" alt="work-3">
+                    <div class="layer">
+                        <h3><b>To-Do List App</b></h3>
+                        <p>Android application written in Java and uses SQLite for data management.</p>
+                        <a href="https://github.com/Faria-Nowsin-Aurthy/To-Do-List-app-Java" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./asset/projects photo/Game Store Website.jpg" alt="work-2">
+                    <div class="layer">
+                        <h3><b>GameStore Website</b></h3>
+                        <p>Designed to showcase a game store interface.</p>
+                        <a href="https://gamestore-made-by-faria-nowsin-aurthy.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./asset/projects photo/Rock, Paper, Scissors Game.jpg" alt="work-4">
+                    <div class="layer">
+                        <h3><b>Rock, Paper, Scissors Game</b></h3>
+                        <p>A game written in C++ and made with Qt Application.</p>
+                        <a href="https://github.com/Faria-Nowsin-Aurthy/Rock-Paper-Scissors" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Faria-Nowsin-Aurthy?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>farianowsin13614@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+880 1826-098379</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Faria-Nowsin-Aurthy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/faria.nowsin.aurthy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nowsin_aurthy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/users/760766207392481310" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <!-- Google Sheet: https://docs.google.com/spreadsheets/d/1Pfw7qnlX8U_CLd_h_jS0bHGEqrbTk_ygczrwIgrONcQ/edit?usp=sharing -->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Aurthy. Made by Faria Nowsin Aurthy. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
